@@ -1,13 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import RootNavigator from './src/navigator'
 
-const App = () => {
+const Notification= () => {
   return (
-   <RootNavigator/>
+    <View>
+      <Text>index</Text>
+    </View>
   )
 }
 
-export default App
+export default Notification
 
 const styles = StyleSheet.create({})
