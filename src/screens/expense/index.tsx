@@ -102,7 +102,7 @@ const Expense = () => {
 
                  {
                     category==='Spends'?
-                    <FlatList data={entry} renderItem={({item, index})=>{
+                    <FlatList scrollEnabled={false} data={entry} renderItem={({item, index})=>{
                         return(
                             <View style={{flexDirection:'row',justifyContent:'space-between',marginHorizontal: vw(10),marginVertical:vh(10),marginTop:vh(30)}}>
                     

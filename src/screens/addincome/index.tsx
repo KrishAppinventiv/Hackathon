@@ -14,6 +14,7 @@ import {vh, vw} from '../../theme/dimensions';
 import {Images} from '../../assets';
 import {Calendar} from 'react-native-calendars';
 import {colors} from '../../theme';
+import { ScreenNames } from '../../navigator/screenNames';
 const Addincome = () => {
   const navigation = useNavigation();
   const [selectedDate, setSelectedDate] = useState('');
@@ -93,7 +94,9 @@ const Addincome = () => {
 
         </View>
 
-        <TouchableOpacity style={{ alignSelf:'center',marginTop:vh(20),backgroundColor:colors.main,paddingVertical:10,paddingHorizontal:vw(50),borderRadius:10}}>
+        <TouchableOpacity style={{ alignSelf:'center',marginTop:vh(20),backgroundColor:colors.main,paddingVertical:10,paddingHorizontal:vw(50),borderRadius:10}} 
+        
+        onPress={()=>navigation.navigate(ScreenNames.Add)}>
             <Text style={{color:'white'}}>ADD INCOME</Text>
         </TouchableOpacity>
       </ScrollView>
